@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Cards | CodingLab</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  background: #8e44ad;
+  color: #fff;
+}
+html,body{
+   background:url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+  width: 100%;
+  height: 100vh;
+ background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+.container{
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .box{
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.box .quote i{
+margin-top: 10px;
+font-size: 45px;
+color: #17c0eb
+}
+.container .box .image{
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #8e44ad;
+  padding: 3px;
+  border-radius: 50%;
+}
+.box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.box p{
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .name_job{
+  margin: 10px 0 3px 0;
+  color: #8e44ad;
+  font-size: 18px;
+  font-weight: 600;
+}
+.rating i{
+  font-size: 18px;
+  color: #8e44ad;
+  margin-bottom: 5px;
+}
+.btns{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btns button{
+  background: #8e44ad;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e44ad;
+  transition: all 0.3s linear;
+}
+.btns button:first-child{
+  background: none;
+  margin-right: 5px;
+}
+.btns button:last-child{
+  color: #fff;
+  margin-left: 5px;
+}
+.btns button:first-child:hover{
+  background: #8e44ad;
+  color: #fff;
+}
+.btns button:hover{
+  color: #fff;
+}
+@media (max-width:1045px){
+  .container .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+    width: 100%;
+  }
+} </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+      <div class="image">
+        <img src="data:image/jpeg;base64,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">
+        </div>
+        <div class="name_job">M. R. K. Panneerselvam</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Thiru M.R.K. Panneerselvam Minister for Agriculture and Farmer’s Welfare Agriculture, Agricultural Engineering, Agro Service Co-operatives, Horticulture, Sugars, Sugarcane Excise, Sugarcane Development and Waste Land Development
+</p>
+        <div class="btns">
+          <button>Message</button>
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+        <img src="https://ourneta.com/wp-content/uploads/2020/09/Sengottaiyan-K.A..jpg" alt="">
+        </div>
+        <div class="name_job">Sengottaiyan K A</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Sengottaiyan was the Minister for Transport from 1991 to 1996 during the first tenure of Jayalalithaa cabinet. He was again the Minister for Agriculture until November 2011 </p>
+        <div class="btns">
+          <button>Message</button>
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/V._Vaithilingam.jpg" alt="">
+        </div>
+        <div class="name_job">R.Vaithilingam</div>
+          <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>R. Vaithilingam State :Tamil Nadu ( 53 more MPs )Constituency :N/AParty :All India Anna Dravida Munnetra Kazhagam ( 27 more MPs )</p>
+        <div class="btns">
+          <button>Message</button>
+          <button>Contact</button>
+        </div>
+      </div>
+    </div>
+      </body>
+</html>

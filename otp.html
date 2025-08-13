@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, 
+                    initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OTP Input</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://media2.giphy.com/media/xdkXW7Scx6gus/200.gif?cid=ecf05e471n212leet6g1p3pdv5sg1xw4rkbteras0kxruggz&ep=v1_gifs_related&rid=200.gif&ct=g'); /* Add your background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;}
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .inputs {
+            display: flex;
+        }
+
+        .input {
+            width: 80px;
+            height: 80px;
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+            margin: 0 10px;
+            text-align: center;
+            font-size: 36px;
+            cursor: not-allowed;
+            pointer-events: none;
+            background-color: #fff; /* Input background color */
+        }
+
+        .input:focus {
+            border-bottom: 3px solid orange;
+            outline: none;
+        }
+
+        .input:nth-child(1) {
+            cursor: pointer;
+            pointer-events: all;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="inputs" class="inputs">
+            <input class="input" type="text" inputmode="numeric" maxlength="1" />
+            <input class="input" type="text" inputmode="numeric" maxlength="1" />
+            <input class="input" type="text" inputmode="numeric" maxlength="1" />
+            <input class="input" type="text" inputmode="numeric" maxlength="1" />
+        </div>
+    </div>
+    <script>
+        const inputs = document.getElementById("inputs");
+
+        inputs.addEventListener("input", function (e) {
+            const target = e.target;
+            const val = target.value;
+
+            if (isNaN(val)) {
+                target.value = "";
+                return;
+            }
+
+            if (val != "") {
+                const next = target.nextElementSibling;
+                if (next) {
+                    next.focus();
+                }
+            }
+        });
+
+        inputs.addEventListener("keyup", function (e) {
+            const target = e.target;
+            const key = e.key.toLowerCase();
+
+            if (key == "backspace" || key == "delete") {
+                target.value = "";
+                const prev = target.previousElementSibling;
+                if (prev) {
+                    prev.focus();
+                }
+                return;
+            }
+        });
+    </script>
+</body>
+
+</html>

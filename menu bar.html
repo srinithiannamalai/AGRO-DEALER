@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AGRODEALER</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Importing Google font - Open Sans */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+             background:url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+        }
+
+        .card-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 1250px;
+            margin: 150px auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card-list .card-item {
+            background: #fff;
+            padding: 26px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+            list-style: none;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: border 0.5s ease;
+        }
+
+        .card-list .card-item:hover {
+            border: 2px solid #000;
+        }
+
+        .card-list .card-item img {
+            width: 100%;
+            aspect-ratio: 14/9;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card-list span {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 8px 15px;
+            font-size: 0.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .card-list .developer {
+            background-color: #F7DFF5;
+            color: #B22485;
+        }
+
+        .card-list .designer {
+            background-color: #d1e8ff;
+            color: #2968a8;
+        }
+
+        .card-list .editor {
+            background-color: #d6f8d6;
+            color: #205c20;
+        }
+
+        .card-item h3 {
+            color: #000;
+            font-size: 1.438rem;
+            margin-top: 28px;
+            font-weight: 600;
+        }
+
+        .card-item .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-35deg);
+            height: 40px;
+            width: 40px;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin-top: 40px;
+            transition: 0.2s ease;
+        }
+
+        .card-list .card-item:hover .arrow {
+            background: #000;
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) {
+            .card-list .card-item {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 980px) {
+            .card-list {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-list">
+        <a href="file:///E:/project%20expo/vehicle/vegicle%20type.html" class="card-item">
+            <img src="https://en.pimg.jp/047/759/026/1/47759026.jpg" alt="Card Image">
+            <h3>vehicle</h3>
+              </a>
+        <a href="file:///E:/project%20expo/refer/reference.html" class="card-item">
+            <img src="https://www.shutterstock.com/image-illustration/book-nature-on-sky-background-260nw-82155457.jpg" alt="Card Image">
+                       <h3>agriculture reference</h3
+        </a>
+        <a href="file:///E:/project%20expo/scheam/scheme.html" class="card-item">
+            <img src="https://jungleworks.com/wp-content/uploads/2020/12/image-10-1024x536.png" alt="Card Image">
+                      <h3>government scheme</h3>
+            
+        </a>
+         <a href="file:///E:/project%20expo/product/product.html" class="card-item">
+            <img src="https://www.niir.org/blog/wp-content/uploads/2020/10/1-4.png" alt="Card Image">
+                      <h3>product</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/chatbot.html" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtlhndeUMuOMDUzdy9OW1pirByfnn8bUmsGCEcD1vIGgdptRgzPC3HmF9mK_teN-kzWs&usqp=CAU" alt="Card Image">
+                      <h3>post your problem</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/insurance/insurance1.html " class="card-item">
+            <img src="https://www.skymetweather.com/content/wp-content/uploads/2018/02/crop-insurance-post.jpg"Card Image">
+                      <h3>crop insurance</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/farmer%20conduct/farmer%20ad.html" class="card-item">
+            <img src="https://th.bing.com/th/id/OIP.xnEAJWUS-En1JN9S6MUVMgHaE7?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Card Image">
+                      <h3>farming advisor</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/stoke%20management%20.html" class="card-item">
+            <img src="https://momentumevents.com/wp-content/uploads/2019/12/farm-inventory-custom_crop.jpeg" alt="Card Image">
+                      <h3>stock management</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/product%20rate.html" class="card-item">
+            <img src="https://th.bing.com/th/id/OIP._BzXTTvBh48UUPntXdgnNAHaDt?rs=1&pid=ImgDetMain" alt="Card Image">
+                      <h3>crop rating</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/stock%20management%20.html" class="card-item">
+            <img src="https://agfundernews.com/wp-content/uploads/2015/09/SLCM.jpg" alt="Card Image">
+                      <h3>storage area</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/news.html" class="card-item">
+            <img src="https://i.pinimg.com/736x/f1/a2/d7/f1a2d7408fa931b188da89c48113d78d.jpg" alt="Card Image">
+                      <h3>agriculture news</h3>
+            
+        </a>
+<a href="file:///E:/project%20expo/agri%20book.html" class="card-item">
+            <img src="https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip" alt="Card Image">
+                      <h3>Agri Book </h3>
+    </div>
+</body>
+</html>

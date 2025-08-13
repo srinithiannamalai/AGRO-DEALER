@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Design HTML and CSS | CodingNepal</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Importing Google font - Open Sans */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+             background:url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+        }
+
+        .card-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 1250px;
+            margin: 150px auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card-list .card-item {
+            background: #fff;
+            padding: 26px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+            list-style: none;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: border 0.5s ease;
+        }
+
+        .card-list .card-item:hover {
+            border: 2px solid #000;
+        }
+
+        .card-list .card-item img {
+            width: 100%;
+            aspect-ratio: 14/9;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card-list span {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 8px 15px;
+            font-size: 0.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .card-list .developer {
+            background-color: #F7DFF5;
+            color: #B22485;
+        }
+
+        .card-list .designer {
+            background-color: #d1e8ff;
+            color: #2968a8;
+        }
+
+        .card-list .editor {
+            background-color: #d6f8d6;
+            color: #205c20;
+        }
+
+        .card-item h3 {
+            color: #000;
+            font-size: 1.438rem;
+            margin-top: 28px;
+            font-weight: 600;
+        }
+
+        .card-item .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-35deg);
+            height: 40px;
+            width: 40px;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin-top: 40px;
+            transition: 0.2s ease;
+        }
+
+        .card-list .card-item:hover .arrow {
+            background: #000;
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) {
+            .card-list .card-item {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 980px) {
+            .card-list {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-list">
+        <a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://thumbs.dreamstime.com/b/fresh-healthy-vegetables-white-background-assortment-42529651.jpg" alt="Card Image">
+            <h3>vegetables</h3>
+              </a>
+        <a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ73Wn7JxkRtfX5WMurqi60oKXpWrFTNRWiQ&usqp=CAU" alt="Card Image">
+                       <h3>fruits</h3
+        </a>
+        <a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://www.agrowinseeds.com/images/about-us.jpg" alt="Card Image">
+                      <h3>seeds</h3>
+           
+        </a>
+         <a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://media.istockphoto.com/id/458218433/photo/varieties-of-grains-seeds-and-beans.jpg?s=612x612&w=0&k=20&c=WoWQn212OY15nbdZGkAVBKgW6AxOHlg_zgH6pBzDlzE=" alt="Card Image">
+                      <h3>cereals</h3>
+           
+        </a>
+<a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5vzF7yA5FBg2akNQLxPvS4zryNtkLACuAxcIYYTnbyA9m8jm7YUEK3YntQg&s sapling" alt="Card Image">
+                      <h3>sapling</h3>
+           
+        </a>
+<a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkvri2HFsqqEbpW8TDRsdMVfC2a2FGz9lGA&usqp=CAU" alt="Card Image">
+                      <h3>oil</h3>
+           
+        </a>
+<a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://5.imimg.com/data5/IV/KI/MY-5422493/timber-2flumber-500x500.png" alt="Card Image">
+                      <h3>wood</h3>
+           
+        </a>
+<a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8r3NReAHB76I43H4-XQhhxfFaZvsC-cLSGg&usqp=CAU" alt="Card Image">
+                      <h3>organic fertilizers</h3>
+           
+        </a>
+<a href="file:///E:/project%20expo/product/product%20choice.html" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnIhFR_v5Ah0ChKJOonetLLKAUnN80nf05Nw&usqp=CAU" alt="Card Image">
+                      <h3>pulses</h3>
+    </div>
+</body>
+</html>

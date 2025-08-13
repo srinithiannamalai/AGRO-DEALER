@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Owl-carousel Cards Slider | CodingNepal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+    background: url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 12px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .btn button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .title {
+                font-size: 30px;
+            }
+            .content {
+                font-size: 16px;
+            }
+            .btn button {
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+       MP KISAN SCHEME:
+    </div>
+    <div class="content">
+        <p>The Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme, launched in 2019, is a flagship agricultural initiative by the Indian government. It aims to provide direct income support to small and marginal farmers across the country. Under the scheme, eligible farmers receive financial assistance of Rs. 6,000 annually in three installments, which helps in sustaining their agricultural activities and livelihoods. PM-KISAN plays a crucial role in improving the economic condition of farmers and ensuring stability in the agricultural sector.</p>
+    </div>
+    <div class="btn">
+        <button onclick="expandContent()">Read more</button>
+    </div>
+</div>
+
+<script>
+    function expandContent() {
+        // You can implement expansion logic here if needed
+        alert('Implement your expansion logic here!');
+    }
+</script>
+</body>
+</html>

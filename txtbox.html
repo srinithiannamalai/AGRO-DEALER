@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Chatbot</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+</style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>function sendMessage() {
+    var userInput = document.getElementById("user-input").value;
+    if (userInput.trim() === "") return;
+
+    appendMessage("user", userInput);
+    document.getElementById("user-input").value = "";
+
+    // Send user input to AI service
+    sendToAI(userInput);
+}
+
+function appendMessage(sender, message) {
+    var chatBox = document.getElementById("chat-box");
+    var messageDiv = document.createElement("div");
+    messageDiv.classList.add(sender);
+    messageDiv.innerHTML = message;
+    chatBox.appendChild(messageDiv);
+
+    // Scroll to bottom
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function sendToAI(userInput) {
+    // Simulate API call or backend service
+    // In a real application, you would send the userInput to your AI service
+    // and handle the response asynchronously
+    var botResponse = "Sorry, I am just a demo bot. I don't have real responses. You typed: " + userInput;
+    
+    // Display bot response after a delay to simulate network latency
+    setTimeout(function () {
+        appendMessage("bot", botResponse);
+    }, 500);
+}
+</script>
+</body>
+</html>

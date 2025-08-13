@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRODEALER</title>
+    <style>
+        /* Custom styles for the embedded website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #A4DE02;
+
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+
+        p {
+            color: #666;
+        }
+
+        #iframeContainer {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            border: 2px solid #ddd;
+        }
+
+        #iframeContainer iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TODAY NEWS ABOUT FARMING</h1>
+          </header>
+    <div id="iframeContainer">
+        <iframe id="embeddedSite" src="https://www.agriculturedive.com/topic/crops/" title="Embedded Website"></iframe>
+    </div>
+    <footer>
+        <p>Powered by Agriculture Dive</p>
+    </footer>
+    <script>
+        // Example JavaScript for manipulating the embedded website
+
+        // Resize the iframe dynamically based on its content's height
+        function resizeIframe() {
+            var iframe = document.getElementById('embeddedSite');
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+
+        // Call the resizeIframe function when the iframe content loads or changes
+        document.getElementById('embeddedSite').addEventListener('load', function() {
+            resizeIframe();
+        });
+
+        // You might need to call resizeIframe() on other events like window resize, etc., depending on your requirements.
+    </script>
+</body>
+</html>

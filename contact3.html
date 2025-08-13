@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Cards | CodingLab</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  background: #8e44ad;
+  color: #fff;
+}
+html,body{
+   background:url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+  width: 100%;
+  height: 100vh;
+ background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+.container{
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .box{
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.box .quote i{
+margin-top: 10px;
+font-size: 45px;
+color: #17c0eb
+}
+.container .box .image{
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #8e44ad;
+  padding: 3px;
+  border-radius: 50%;
+}
+.box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.box p{
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .name_job{
+  margin: 10px 0 3px 0;
+  color: #8e44ad;
+  font-size: 18px;
+  font-weight: 600;
+}
+.rating i{
+  font-size: 18px;
+  color: #8e44ad;
+  margin-bottom: 5px;
+}
+.btns{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btns button{
+  background: #8e44ad;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e44ad;
+  transition: all 0.3s linear;
+}
+.btns button:first-child{
+  background: none;
+  margin-right: 5px;
+}
+.btns button:last-child{
+  color: #fff;
+  margin-left: 5px;
+}
+.btns button:first-child:hover{
+  background: #8e44ad;
+  color: #fff;
+}
+.btns button:hover{
+  color: #fff;
+}
+@media (max-width:1045px){
+  .container .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+    width: 100%;
+  }
+} </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+      <div class="image">
+        <img src="https://media.licdn.com/dms/image/C5603AQGoSRM5VyRv_A/profile-displayphoto-shrink_800_800/0/1630928570182?e=2147483647&v=beta&t=7PiwpXFWaSHeyLP9yxYB45BTVPwFbavZdXBowVvkKYI">
+        </div>
+        <div class="name_job">Yash Sanjay Mahajan</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Yash Sanjay Mahajan Student Pillai HOC College of Engineering and Technology Badlapur</p>
+        <div class="btns">
+          <button>Message</button>
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+        <img src="https://internship.aicte-india.org/uploads/profile/STU602d0307d26251613562631.jpg" alt="">
+        </div>
+        <div class="name_job">Shelake Omkar Gokul</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Dr Shelake Omkar Gokul Tamil Nadu Agricultural University Coimbatore, Tamil Nadu, - 641003 Ph.D Tamil Nadu Agricultural University
+</p>
+        <div class="btns">
+          <button>Message</button>
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+         <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div class="name_job">Bhor Vaishnavi Balasaheb</div>
+          <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Dr Bhor Vaishnavi Balasaheb Tamil Nadu Agricultural University, Lawley Road Coimbatore, Tamil Nadu, - 641003 Ph.D Agricultural College and Research Institute, Killikulam
+</p>
+        <div class="btns">
+          <button>Message</button>
+          <button>Contact</button>
+        </div>
+      </div>
+    </div>
+      </body>
+</html>

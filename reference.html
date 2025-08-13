@@ -1,0 +1,241 @@
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>AGRODEALER</title>
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+         }
+         html,
+         body {
+       display: grid;
+         height: 100%;
+         width: 100%;
+         place-items: center;
+        background:url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80);
+background-size: cover;
+background-position: center;
+  position: relative;
+
+ 
+
+
+         }
+         ::selection {
+         color: #fff;
+         background: #1cc7d0;
+         }
+         .container {
+         display: flex; /* Align cards in a single row */
+         }
+         .wrapper {
+         margin: 0 10px; /* Add some margin between cards */
+         height: 400px;
+         width: 320px;
+         position: relative;
+         transform-style: preserve-3d;
+         perspective: 1000px;
+         }
+         .wrapper .card {
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         padding: 5px;
+         background:url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/74/06/2557bbeaccd7869.jpg);
+         border-radius: 10px;
+         transform: translateY(0deg);
+         transform-style: preserve-3d;
+         backface-visibility: hidden;
+         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+         transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+         }
+         .wrapper:hover > .front-face {
+         transform: rotateY(-180deg);
+         }
+         .wrapper .card img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 10px;
+         }
+         .wrapper .back-face {
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         flex-direction: column;
+         transform: rotateY(180deg);
+         }
+         .wrapper:hover > .back-face {
+         transform: rotateY(0deg);
+         }
+         .wrapper .back-face img {
+         height: 150px;
+         width: 150px;
+         padding: 5px;
+         border-radius: 50%;
+         background: linear-gradient(375deg, #1cc7d0, #2ede98);
+         }
+         .wrapper .back-face .info {
+         text-align: center;
+         }
+         .back-face .info .title {
+         font-size: 30px;
+         font-weight: 500;
+         }
+         .back-face ul {
+         display: flex;
+         }
+         .back-face ul a {
+         display: block;
+         height: 40px;
+         width: 40px;
+         color: #fff;
+         text-align: center;
+         margin: 0 5px;
+         line-height: 38px;
+         border: 2px solid transparent;
+         border-radius: 50%;
+         background: linear-gradient(375deg, #1cc7d0, #2ede98);
+         transition: all 0.5s ease;
+         }
+         .back-face ul a:hover {
+         color: #1cc7d0;
+         border-color: #1cc7d0;
+         background: linear-gradient(375deg, transparent, transparent);
+         }
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <div class="card front-face">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Vehn%C3%A4pelto_6.jpg">
+            </div>
+            <div class="card back-face">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Vehn%C3%A4pelto_6.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+               <a href="file:///E:/project%20expo/refer/refe.html">   <h1> wheat cultivation</h1></a>
+               </div>
+               
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="card front-face">
+               <img src="https://www.hdwallpapers.in/download/beautiful_sunflowers_field_hd_sunflower-1366x768.jpg" >
+            </div>
+            <div class="card back-face">
+               <img src="https://www.hdwallpapers.in/download/beautiful_sunflowers_field_hd_sunflower-1366x768.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+                <a href="file:///E:/project%20expo/refer/refe5.html"> <h1>sunflower</h1></a>
+               </div>
+               
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="card front-face">
+               <img src="https://cdn.britannica.com/65/212765-050-3D7735E9/sesame-plant.jpg">
+            </div>
+            <div class="card back-face">
+               <img src="https://cdn.britannica.com/65/212765-050-3D7735E9/sesame-plant.jpg">
+               <div class="info">
+                  <div class="title">
+                     
+                  </div>
+              <a href="file:///E:/project%20expo/refer/refe4.html">  <H1> sesame plant </h1></a>
+               </div>
+     
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="card front-face">
+               <img src="https://cdn.pixabay.com/photo/2013/08/22/19/18/flowers-174817_640.jpg">
+            </div>
+            <div class="card back-face">
+               <img src="https://cdn.pixabay.com/photo/2013/08/22/19/18/flowers-174817_640.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+                <a href="file:///E:/project%20expo/refer/refe6.html">   <h1> rose plant </h1></a>
+               </div>
+               
+            </div>
+         </div>
+<div class="wrapper">
+            <div class="card front-face">
+               <img src="https://png.pngtree.com/background/20211215/original/pngtree-summer-noon-rice-paddy-field-still-life-photography-map-with-pictures-picture-image_1480083.jpg" >
+            </div>
+            <div class="card back-face">
+               <img src="https://t3.ftcdn.net/jpg/02/28/76/20/360_F_228762020_md5J7oyDKx8ydqrGyN4Pe173n9j51dQe.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+                <a href="file:///E:/project%20expo/refer/refe7.html">   <h1> paddy field</h1></a>
+               </div>
+               
+            </div>
+         </div>
+<div class="wrapper">
+            <div class="card front-face">
+               <img src="https://t4.ftcdn.net/jpg/00/14/71/15/360_F_14711535_o3MgCpenxtKxNX5bw3iAzfoUfWBAKLuy.jpg">
+            </div>
+            <div class="card back-face">
+               <img src="https://t4.ftcdn.net/jpg/00/14/71/15/360_F_14711535_o3MgCpenxtKxNX5bw3iAzfoUfWBAKLuy.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+                  <p>
+                   <a href="file:///E:/project%20expo/refer/refe2.html">   <h1>mango tree</h1></a>
+               </div>
+               
+            </div>
+         </div>
+<div class="wrapper">
+            <div class="card front-face">
+               <img src="https://t4.ftcdn.net/jpg/04/18/04/11/360_F_418041157_tJ1Kf7z90deMsoUMc19qeyaRgiZ1XBmG.jpg">
+            </div>
+            <div class="card back-face">
+               <img src="https://t4.ftcdn.net/jpg/04/18/04/11/360_F_418041157_tJ1Kf7z90deMsoUMc19qeyaRgiZ1XBmG.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+                  <p>
+                    <a href="file:///E:/project%20expo/refer/refe3.html">  <h1>groundnut plant</h1></a>
+               </div>
+               
+            </div>
+         </div>
+<div class="wrapper">
+            <div class="card front-face">
+               <img src="https://t3.ftcdn.net/jpg/02/51/26/24/360_F_251262477_qiQDh9Gvulq7Ku34QiWORFwt5ePJeWsK.jpg">
+            </div>
+            <div class="card back-face">
+               <img src="https://t3.ftcdn.net/jpg/02/51/26/24/360_F_251262477_qiQDh9Gvulq7Ku34QiWORFwt5ePJeWsK.jpg">
+               <div class="info">
+                  <div class="title">
+                   
+                  </div>
+                  <p>
+                     <a href="file:///E:/project%20expo/refer/refe1.html"> <h1>guava tree</h1></a>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
